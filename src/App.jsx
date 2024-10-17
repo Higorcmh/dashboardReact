@@ -8,26 +8,23 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div class="login-container">
+        <h2 class="login-title">Login to Account</h2>
+        <p class="login-text" id='login-intro'>Please enter your email and password to continue</p>
+        <form class="login-form">
+          <p class="login-text">Email address:</p>
+          <input type="email" placeholder="Email adress" required/>
+          <p class="login-text">Password</p>
+          <p class="login-text" id='login-forget'><a id="link-forget" href="#">Forget Password?</a></p>
+          <input type="email" placeholder="Password" required/>
+          <div class="login-checkbox">
+            <input type="checkbox" id="remember"/>
+            <label for="remember">Remember Password</label>
+          </div>
+          <button class="login-button" type="submit">Sign In</button>
+        </form>
+        <p class="login-text" id='login-create'>Don't have an account? <a id="link-create" href="#">Create Account</a></p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
