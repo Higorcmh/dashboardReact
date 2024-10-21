@@ -1,29 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div class="login-container">
-        <h2 class="login-title">Login to Account</h2>
-        <p class="login-text" id='login-intro'>Please enter your email and password to continue</p>
-        <form class="login-form">
-          <p class="login-text">Email address:</p>
-          <input type="email" placeholder="Email adress" required/>
-          <p class="login-text">Password</p>
-          <p class="login-text" id='login-forget'><a id="link-forget" href="#">Forget Password?</a></p>
-          <input type="email" placeholder="Password" required/>
-          <div class="login-checkbox">
-            <input type="checkbox" id="remember"/>
+      <div className="login-container">
+        <h2 className="login-title">Login to Account</h2>
+        <p className="login-text">Please enter your email and password to continue</p>
+        <form className="login-form">
+          <p className="login-email">Email address:</p>
+          <input className="login-input" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Email adress" required/>
+          <div className="login-password">
+          <p className="login-password-text">Password</p>
+          <p className="login-password-text"><a href="#">Forget Password?</a></p>
+          </div>
+          <input className="login-input" type="password" placeholder="Password" minLength="8" required/>
+          <div className="login-checkbox">
+            <input type="checkbox"/>
             <label for="remember">Remember Password</label>
           </div>
-          <button class="login-button" type="submit">Sign In</button>
+          <button className="login-button" type="submit">Sign In</button>
         </form>
-        <p class="login-text" id='login-create'>Don't have an account? <a id="link-create" href="#">Create Account</a></p>
+        <p className="login-text">Don't have an account? <a href="#">Create Account</a></p>
       </div>
     </>
   )

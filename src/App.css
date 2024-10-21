@@ -9,16 +9,24 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .login-container {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   padding: 40px 40px;
   border-radius: 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 350px;
 }
-.login-container h2 {
+
+.login-title {
   margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
 }
+
 .login-container input[type="email"],
 .login-container input[type="password"] {
   background-color: #f0f0f0;
@@ -30,11 +38,25 @@ body {
   font-size: 18px;
   font-family: "Nunito Sans", sans-serif;
 }
+
+.login-email {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.login-password-text {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 .login-container input[type="checkbox"] {
   margin-right: 10px;
-  
+  margin-bottom: 20px;
 }
-.login-container button {
+
+.login-button {
   width: 100%;
   padding: 10px;
   background-color:#4880FF;
@@ -44,31 +66,31 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+
 .login-container button:hover {
   background-color: #357ABD;
 }
+
 .login-container a {
   color: #202224;
   text-decoration: none;
 }
+
 .login-container a:hover {
   color: #5a8cff;
   text-decoration: underline;
 }
 
-.login-title {
-  text-align: center;
-  font-size: 32px;
-  font-family: "Nunito Sans", sans-serif;
-}
-
 .login-text {
   font-size: 14px;
   font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  margin: 5px;
 }
 
-.login-intro {
-  text-align: center;
+.login-password {
+  display: flex;
+  justify-content: space-between;
 }
 
 input::placeholder {
