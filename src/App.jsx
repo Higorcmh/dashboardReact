@@ -7,21 +7,23 @@ function App() {
       <div className="login-container">
         <h2 className="login-title">Login to Account</h2>
         <p className="login-text">Please enter your email and password to continue</p>
-        <form className="login-form">
-          <p className="login-email">Email address:</p>
-          <input className="login-input" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Email adress" required/>
-          <div className="login-password">
-          <p className="login-password-text">Password</p>
-          <p className="login-password-text"><a href="#">Forget Password?</a></p>
+        <form>
+          <div className="login-forms">
+            <p className="login-p">Email address:</p>
+            <input className="login-input" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="esteban_schiller@gmail.com" required/>
           </div>
-          <input className="login-input" type="password" placeholder="Password" minLength="8" required/>
+          <div className="login-forms">
+            <p className="login-p">Password</p>
+            <p className="login-p"><a href="#">Forget Password?</a></p>
+            <input className="login-input" type="password" minLength="8" required/>
+          </div>
           <div className="login-checkbox">
             <input type="checkbox"/>
-            <label for="remember">Remember Password</label>
+            <label className="remember" for="remember">Remember Password</label>
           </div>
           <button className="login-button" type="submit">Sign In</button>
         </form>
-        <p className="login-text">Don't have an account? <a href="#">Create Account</a></p>
+        <p className="login-text">Don't have an account? <a className="create-button" href="#">Create Account</a></p>
       </div>
     </>
   )

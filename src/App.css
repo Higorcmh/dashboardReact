@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -7,11 +13,13 @@ body {
   background-image: url(./assets/shape.png);
   background-color: #4880FF;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .login-container {
   display: flex;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   background-color: white;
   padding: 40px 40px;
@@ -21,43 +29,43 @@ body {
 }
 
 .login-title {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 32px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .login-container input[type="email"],
 .login-container input[type="password"] {
-  background-color: #f0f0f0;
+  background-color: #f1f4f9;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 2%;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 18px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
-.login-email {
+.login-p {
   font-size: 14px;
-  font-weight: bold;
-  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  color: #202224;
 }
 
-.login-password-text {
-  font-size: 14px;
-  font-weight: bold;
-  font-family: "Nunito Sans", sans-serif;
+.login-checkbox {
+  display: flex;
+  align-items: start;
+  padding: 0px 6px;
+  align-items: center;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
 }
 
-.login-container input[type="checkbox"] {
-  margin-right: 10px;
-  margin-bottom: 20px;
+.remember {
+  padding: 0px 0px 0px 5px;
 }
 
 .login-button {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   background-color:#4880FF;
   border: none;
@@ -73,33 +81,35 @@ body {
 
 .login-container a {
   color: #202224;
-  text-decoration: none;
 }
 
 .login-container a:hover {
   color: #5a8cff;
-  text-decoration: underline;
 }
 
 .login-text {
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
   text-align: center;
   margin: 5px;
 }
 
-.login-password {
+.login-forms {
   display: flex;
+  margin-top: 20px;
+  padding: 0px 0px;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.create-button {
+  text-decoration: underline;
 }
 
 input::placeholder {
   padding-left: 10px;
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 label {
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
 }
