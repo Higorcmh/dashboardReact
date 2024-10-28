@@ -12,15 +12,15 @@ function ComponentLogin() {
       </p>
       <form>
       <div className="login-forms">
-          <p className="login-p">Email address:</p>
-          <input
-          className="login-input"
-          type="email"
-          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-          title="Invalid email address"
-          placeholder="esteban_schiller@gmail.com"
-          required
-          />
+        <p className="login-p">Email address:</p>
+        <input
+        className="login-input"
+        type="email"
+        pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+        title="Invalid email address"
+        placeholder="esteban_schiller@gmail.com"
+        required
+        />
       </div>
       <div className="login-forms">
         <p className="login-p">Password</p>
