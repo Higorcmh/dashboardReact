@@ -6,9 +6,13 @@ import "../styles/StylesRegistro.css";
 function RegisterPage() {
   return (
     <>
-      <div className="register-container">
-        <ComponentRegistro/>
-      </div>
+      <p>registro</p>
+      <p>registro</p>
+      <p>registro</p>
+      <p>registro</p>
+      <p>registro</p>
+      <p>registro</p>
+      <p>registro</p>
     </>
   );
 }
