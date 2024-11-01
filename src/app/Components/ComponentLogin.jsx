@@ -6,13 +6,13 @@ import "../styles/StylesLogin.css";
 function ComponentLogin() {
   return(
     <div>
-      <h2 className="login-title">Login to Account</h2>
+      <h2 className="login-title">Entrar na conta</h2>
       <p className="login-text">
-      Please enter your email and password to continue
+      Por favor, digite seu e-mail e senha para continuar
       </p>
       <form>
       <div className="login-forms">
-        <p className="login-p">Email address:</p>
+        <p className="login-p">Endereço de email</p>
         <input
         className="login-input"
         type="email"
@@ -23,9 +23,9 @@ function ComponentLogin() {
         />
       </div>
       <div className="login-forms">
-        <p className="login-p">Password</p>
+        <p className="login-p">Senha</p>
         <p className="login-p">
-        <a href="#">Forget Password?</a>
+        <a href="#">Esqueceu a senha?</a>
         </p>
         <input
         className="login-input"
@@ -37,17 +37,17 @@ function ComponentLogin() {
       <div className="login-checkbox">
         <input type="checkbox" />
         <label className="remember" for="remember">
-        Remember Password
+        Lembrar senha
         </label>
       </div>
         <button className="login-button" type="submit">
-        Sign In
+        Entrar
         </button>
         </form>
         <p className="login-text">
-        Don't have an account?{" "}
+        Não tem uma conta? {" "}
         <Link to={"/registro"} className="create-button" href="#">
-        Create Account
+        Criar uma conta
         </Link>
         </p>
       </div>
